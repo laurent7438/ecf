@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Formulaire de contact</h1>
+    <h2 id="fall"></h2>
+    <form action="" method="post" id="loginform" class="hidden">
+        <div class="left" id="name">
+            <p>Nom</p>
+            <input type="text" name="fullname" id="fullname" class="input" placeholder="Entrez votre nom complet">
+            <div class="common"><p id="one" class="error hidden"></p></div>
+        </div>
+        <div class="left" id="email">
+            <p>Email</p>
+            <input type="email" name="mail" id="mail" class="input" placeholder="Entrez votre adersse mail">
+            <div class="common"><p id="two" class="error hidden">"" !</p></div>
+        </div>
+        <div class="left" id="phone">
+            <p>Téléphone</p>
+            <input type="tel" name="call" id="call" class="input" placeholder="Entrez votre numéro">
+            <div class="common"><p id="three" class="error hidden">"" !</p></div>
+        </div>
+        <div class="left" id="pass">
+            <p>Mot de passe</p>
+            <input type="text" name="pwd" id="pwd" class="input" placeholder="Entrez votre mot de passe">
+            <div class="common"><p id="four" class="error hidden">"" !</p></div>
+        </div>
+        <p id="message" class="area">Message :<span id="bonjour"></span></p>
+        <textarea name="textmessage" id="textmessage" class="input" placeholder="Entrez votre message" cols="30" rows="10"></textarea>
+        <div id="five" class="error hidden">Vous n'avez pas rédigé votre message !</div>
+        <button type="submit" id="button" class="left">Envoyer</button>
+
+
+
+    </form>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
